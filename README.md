@@ -6,7 +6,7 @@
   Projeto todoList é um projeto que criei aonde tem o intuito de testar técnicas e tecnologias que aprendi estudando de forma autônoma ou instruida.
 
 # Stacks
-  Front-end: Angular 19(19.2.0)
+  Front-end: Angular 19(19.2.0)  
   UI: Angular Material
 
 # Como instalar
