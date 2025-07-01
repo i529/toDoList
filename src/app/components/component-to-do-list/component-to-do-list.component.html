@@ -1,0 +1,34 @@
+<header>
+
+</header>
+<div class="flex">
+    <div class="box-todo">
+        <!--Parte aonde o usuario informa o que vai colocar na lista-->
+        <form>
+            <mat-form-field class="custom-border" color="primary">
+                <mat-label>O que vai fazer hoje?</mat-label>
+                <input matInput placeholder="Tenho que fazer..." [(ngModel)]="taskValor" name="taskBox" maxlength="31"> 
+                <button
+                mat-flat-button
+                matSuffix 
+                class="button-input-todo"
+                color="primary"
+                (click)="addTask()">+</button>
+
+            </mat-form-field>
+        </form>
+        <!--A lista aonde o que o usuário informou, aparece-->
+            <ul *ngFor="let task of tasks">
+                <li class="card-todo" >
+                    <div [ngClass]="{'button-check': task.check}">
+                        {{task.input}}
+                    </div>
+                    <div>
+                        <button mat-mini-fab color ="primary" class="button-card-todo" (click)="doneTask(task)"><mat-icon>done</mat-icon></button>
+                        <!--Usando o index do ngFor, enviarei ao typescript o ID do item que clicou-->
+                        <button mat-mini-fab color ="warn" class="button-card-todo" (click)="removeTask(task.id)"><mat-icon>delete</mat-icon></button>
+                    </div>
+                </li>
+            </ul>
+    </div>
+</div>

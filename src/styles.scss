@@ -1,0 +1,36 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+// Definindo as paletas de cores
+
+$my-primary: mat.m2-define-palette(mat.$m2-purple-palette);
+$my-accent: mat.m2-define-palette(mat.$m2-pink-palette);
+$my-warn: mat.m2-define-palette(mat.$m2-red-palette);
+
+$my-theme: mat.m2-define-light-theme((
+    color: (
+        primary: $my-primary,
+        accent: $my-accent,
+        warn: $my-warn,
+    )
+));
+
+
+//setando as cores
+@include mat.all-component-themes($my-theme);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body { 
+    height: 100%; 
+}
+
+body {
+    background: linear-gradient(to left, #EC407A, #7B1FA2);
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    margin: 0; 
+}
