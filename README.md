@@ -13,13 +13,15 @@
   Não precisa instalar, o projeto está hospedado no Versel, segue o Link:
   Caso REALMENTE queira dar uma olhada da sua máquina a source, irá precisar clonar este projeto, baixar o Angular e o node.js instalado. Deixarei o link do node.js aqui para facilitar o processo: https://nodejs.org/pt
 
-  ![image](https://github.com/user-attachments/assets/80b28ef7-2352-430a-9be2-7fddf0ef932c)
+  ![image](https://github.com/user-attachments/assets/a208b028-e9eb-474d-9814-d7a3788c5b1a)
+
   
   Com o node.js instalado e diretorio do projeto clonado, daremos sequência ao angular. 
   
   Entre pelo CMD, na pasta do projeto que você clonou e instale as dependencias que seguiram no package.json. Para isso, apenas dê npm install.
 
-  ![image](https://github.com/user-attachments/assets/c527298a-4241-49e8-93ee-8ad1afe9bdbc)
+  ![image](https://github.com/user-attachments/assets/f3ea746e-b085-4f58-a6cc-15e2335e230d)
+
 
   Se tudo ocorrer como previsto, as depedências iram instalar corretamente na package.json e você irá poder utilizar o projeto localmente da sua máquina, para rodar o servidor, utilize npx ng serve.
 
